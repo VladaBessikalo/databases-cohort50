@@ -45,7 +45,7 @@ const insert_rooms = `INSERT INTO Room (room_no, room_name, floor_number) VALUES
 
 const insert_meetings = `INSERT INTO Meeting (meeting_title, starting_time, ending_time, room_no) VALUES 
     ('Project Planning', '2024-12-20 09:00:00', '2024-12-20 10:00:00', 101),
-    ('Marketing Strategy', '2024-12-21 11:00:00', '2024-12-21 12:30:00', 102),
+    ('Daily Standup', '2024-12-21 11:00:00', '2024-12-21 12:30:00', 102),
     ('Budget Review', '2024-12-22 14:00:00', '2024-12-22 15:30:00', 201),
     ('Team Building Workshop', '2024-12-23 10:00:00', '2024-12-23 12:00:00', 202),
     ('Annual General Meeting', '2024-12-24 13:00:00', '2024-12-24 15:00:00', 301)`;
