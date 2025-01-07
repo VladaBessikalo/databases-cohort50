@@ -59,43 +59,44 @@ async function addDataToDatabase() {
             (14, 'Lacey Sturm', 'North Carolina State University', '1981-09-22', 38, 'f', 3),
             (15, 'Bert McCracken', 'University of Utah', '1982-02-25', 36, 'm', 1)
     `;
+
     const addResearchPaperInfo = `
     INSERT INTO research_papers (paper_id, paper_title, conference, publish_date)
-VALUES
-    (1, 'The Evolution of Emo Music', 'World Music Conference', '1998-05-15'),
+    VALUES
+    (1, 'The Evolution of Alternative Music', 'World Music Conference', '1998-05-15'),
     (2, 'Pop-Punk: A Cultural Phenomenon', 'Global Rock Studies Summit', '2001-07-20'),
     (3, 'The Rise of Female Fronted Bands in the 90s', 'Women in Music Symposium', '1999-03-12'),
     (4, 'Lyrics and Youth: The Impact of Green Day', 'Youth Culture Conference', '2000-09-25'),
     (5, 'The Legacy of Nirvana in Modern Rock', 'Grunge Studies Forum', '1997-11-30'),
-    (6, 'The Emo Aesthetic: Visual and Sonic Elements', 'Visual Arts and Music Intersection', '2002-04-10'),
-    (7, 'The Role of My Chemical Romance in Emo Revival', 'Music Revival Studies Conference', '2005-06-18'),
+    (6, 'The Aesthetic: Visual and Sonic Elements', 'Visual Arts and Music Intersection', '2002-04-10'),
+    (7, 'The Role of My Chemical Romance in Pop Revival', 'Music Revival Studies Conference', '2005-06-18'),
     (8, 'Paramore Breakthrough in Mainstream Music', 'Pop Music Insights', '2007-01-21'),
     (9, 'Warped Tour: A Catalyst for Alternative Music', 'Music Festivals and Culture', '1996-08-15'),
     (10, 'The Intersection of Punk and Pop in Blink-182''s Work', 'Crossover Music Conference', '2001-10-05'),
-    (11, 'The DIY Ethos in Emo and Pop-Punk Bands', 'Independent Music Summit', '1999-12-14'),
-    (12, 'Guitar Techniques in Emo Bands', 'World Guitar Conference', '1998-06-30'),
+    (11, 'The DIY Ethos in Pop-Punk Bands', 'Independent Music Summit', '1999-12-14'),
+    (12, 'Guitar Techniques in Pop Bands', 'World Guitar Conference', '1998-06-30'),
     (13, 'The Emotional Themes in Dashboard Confessional Lyrics', 'Poetry in Music Symposium', '2000-04-22'),
     (14, 'How Avril Lavigne Changed Pop-Punk for Women', 'Women in Punk Conference', '2002-09-14'),
     (15, 'The Influence of Good Charlotte on Teen Culture', 'Teen Identity and Music Forum', '2003-03-03'),
     (16, 'The Role of Social Media in Pop-Punk Revival', 'Music and Technology Summit', '2010-11-19'),
-    (17, 'Evanescence: A Bridge Between Goth and Emo', 'Genre Blending in Music', '2004-05-09'),
+    (17, 'Evanescence: A Bridge Between Goth and Pop-Punk', 'Genre Blending in Music', '2004-05-09'),
     (18, 'The Drumming Styles in Pop-Punk Bands', 'Rhythm in Music Studies', '1997-07-29'),
-    (19, 'How Emo Bands Explored Mental Health in Lyrics', 'Music and Psychology Conference', '2000-08-12'),
-    (20, 'The Role of MTV in Popularizing Emo', 'Media and Music Insights', '1999-10-08'),
+    (19, 'How Bands Explored Mental Health in Lyrics', 'Music and Psychology Conference', '2000-08-12'),
+    (20, 'The Role of MTV in Popularizing Alternative Rock', 'Media and Music Insights', '1999-10-08'),
     (21, 'The Acoustic Side of Punk: Stripped-Down Sounds', 'Acoustic Music Studies', '2005-02-15'),
     (22, 'Pop-Punk and Its Connection to Skateboarding Culture', 'Subcultures in Music', '2001-03-20'),
     (23, 'The Branding of Pop-Punk Bands: Merchandise and Identity', 'Music Marketing Summit', '1998-11-02'),
     (24, 'Taking Back Sunday: Lyrics of Love and Loss', 'Storytelling in Music Symposium', '2003-07-18'),
-    (25, 'The Role of Emo in Female Representation in Music', 'Diversity in Music Studies', '2006-04-07'),
-    (26, 'The Intersection of Emo and Fashion: Skinny Jeans and Eyeliner', 'Fashion and Music Trends', '2002-01-13'),
+    (25, 'The Role of Alternative Music in Female Representation', 'Diversity in Music Studies', '2006-04-07'),
+    (26, 'The Intersection of Fashion and Music Trends', 'Fashion and Music Trends', '2002-01-13'),
     (27, 'The Nostalgia of 90s Pop-Punk in Today''s Music', 'Nostalgia and Pop Culture Conference', '2015-09-10'),
-    (28, 'The Collaboration Between Emo Bands and Producers', 'Music Collaboration Studies', '1997-05-25'),
+    (28, 'The Collaboration Between Pop-Punk Bands and Producers', 'Music Collaboration Studies', '1997-05-25'),
     (29, 'The Sound of Suburbia: Pop-Punk and Middle-Class America', 'Sociology in Music Conference', '2000-02-27'),
-    (30, 'From Garage Bands to Stardom: The Journey of Emo Artists', 'Music Career Symposium', '2003-12-06');
+    (30, 'From Garage Bands to Stardom: The Journey of Alternative Artists', 'Music Career Symposium', '2003-12-06')
 `;
+
     const addAuthorsPaperInfo = `
         INSERT INTO author_paper (author_id, paper_id)
-        
         VALUES
         (1, 1), (1, 5), (1, 12),
         (2, 3),
