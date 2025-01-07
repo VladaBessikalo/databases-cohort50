@@ -48,7 +48,7 @@ const create_recipe_steps_query = `CREATE TABLE IF NOT EXISTS recipe_steps(
   recipe_id INT,
   step_id INT,
   step_order INT,
-  PRIMARY KEY (recipe_id, step_id),
+  PRIMARY KEY (recipe_id, step_id, step_order),
   FOREIGN KEY (recipe_id) REFERENCES recipe(id),
   FOREIGN KEY (step_id) REFERENCES steps(id)
 )`;
